@@ -34,20 +34,21 @@
         }
 
         /* Subtle animated background */
-        body::before {
-            content: '';
-            position: fixed;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: 
-                radial-gradient(circle at 20% 50%, rgba(255, 0, 128, 0.03) 0%, transparent 50%),
-                radial-gradient(circle at 80% 80%, rgba(121, 40, 202, 0.03) 0%, transparent 50%),
-                radial-gradient(circle at 40% 20%, rgba(0, 212, 255, 0.02) 0%, transparent 50%);
-            animation: gradientShift 25s ease infinite;
-            pointer-events: none;
-            z-index: -1;
+     body::before {
+    content: '';
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: 
+        radial-gradient(circle at 20% 50%, rgba(255, 0, 128, 0.08) 0%, transparent 60%),
+        radial-gradient(circle at 80% 80%, rgba(121, 40, 202, 0.08) 0%, transparent 60%),
+        radial-gradient(circle at 40% 20%, rgba(0, 212, 255, 0.06) 0%, transparent 60%);
+    animation: gradientShift 15s ease infinite;
+    pointer-events: none;
+    z-index: -1;
+}
         }
 
         @keyframes gradientShift {
@@ -501,7 +502,7 @@
         <h2>Sobre Mim</h2>
         <div class="about-content">
             <div class="about-text">
-                <p>Olá! Sou Daniel Garcia, designer e desenvolvedor apaixonado por criar experiências visuais impactantes e funcionais.</p>
+                <p>Olá! Sou Daniel Garcia, Estrategista Digital com alto conhecimento em design.  e desenvolvedor apaixonado por criar experiências visuais impactantes e funcionais.</p>
                 <p><strong>Formado em Multimídia pelo Colégio NAVE - Núcleo Avançado em Educação</strong>, possuo amplo conhecimento em <strong>vendas, gatilhos mentais e copywriting</strong>, além de experiência em <strong>estratégias digitais para negócios e influencers</strong>.</p>
                 <p>Meu trabalho combina estética moderna com funcionalidade e psicologia de vendas, sempre buscando inovação e excelência em cada projeto.</p>
             </div>
@@ -712,12 +713,6 @@
             currentSlide = (currentSlide - 1 + slides.length) % slides.length;
             updateSlidePosition();
         });
-
-        // Auto-play carousel (optional)
-        setInterval(() => {
-            currentSlide = (currentSlide + 1) % slides.length;
-            updateSlidePosition();
-        }, 5000);
 
         // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
