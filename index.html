@@ -49,7 +49,6 @@
     pointer-events: none;
     z-index: -1;
 }
-        }
 
         @keyframes gradientShift {
             0%, 100% { transform: translate(0, 0) rotate(0deg); }
@@ -236,13 +235,15 @@
             overflow: hidden;
         }
 
+        .about-visual img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
         .about-visual::before {
-            content: 'DG';
-            font-family: 'Orbitron', sans-serif;
-            font-size: 10rem;
-            font-weight: 900;
-            opacity: 0.08;
-            position: absolute;
+            content: '';
         }
 
         /* Projects Carousel */
@@ -528,7 +529,9 @@
     Hoje, meu trabalho une estética moderna, funcionalidade e psicologia de vendas para criar soluções que conectam, engajam e convertem — sempre com foco em inovação e excelência.
   </p>
             </div>
-            <div class="about-visual"></div>
+            <div class="about-visual">
+                <img src="images/sua-foto.jpg" alt="Foto de Daniel Garcia">
+            </div>
         </div>
     </section>
 
@@ -597,39 +600,40 @@
                     <div class="project-slide">
                         <div class="project-image">
                             <video controls preload="metadata">
-    <source src="images/nataldedo.mp4" type="video/mp4">
-    Seu navegador não suporta vídeos.
-</video>
+                                <source src="images/nataldedo.mp4" type="video/mp4">
+                                Seu navegador não suporta vídeos.
+                            </video>
+                        </div>
                         <div class="project-details">
-                            <h3 class="project-title">Reels para Matheus Dedo Fúria Football </h3>
+                            <h3 class="project-title">Reels para Matheus Dedo Fúria Football</h3>
                             <p class="project-description">Ação de Natal com +1M de views</p>
                         </div>
                     </div>
-                </div>
 
                     <!-- Project 7 -->
                     <div class="project-slide">
                         <div class="project-image">
                             <video controls preload="metadata">
-    <source src="images/seubacalha1.mp4" type="video/mp4">
-    Seu navegador não suporta vídeos.
-</video>
+                                <source src="images/seubacalha1.mp4" type="video/mp4">
+                                Seu navegador não suporta vídeos.
+                            </video>
+                        </div>
                         <div class="project-details">
-                            <h3 class="project-title">Reels Seu Bacalha </h3>
+                            <h3 class="project-title">Reels Seu Bacalha</h3>
                             <p class="project-description">Um de diversos reels feito para o Seu Bacalha</p>
                         </div>
                     </div>
-                </div>
 
                     <!-- Project 8 -->
                     <div class="project-slide">
                         <div class="project-image">
-                           <video controls preload="metadata">
-    <source src="images/artemania.mp4" type="video/mp4">
-    Seu navegador não suporta vídeos.
-</video>
+                            <video controls preload="metadata">
+                                <source src="images/artemania.mp4" type="video/mp4">
+                                Seu navegador não suporta vídeos.
+                            </video>
+                        </div>
                         <div class="project-details">
-                            <h3 class="project-title">Reels collab Matheus Dedo e Lanchonete Arte Mania </h3>
+                            <h3 class="project-title">Reels collab Matheus Dedo e Lanchonete Arte Mania</h3>
                             <p class="project-description">Vídeo com +57k de views</p>
                         </div>
                     </div>
